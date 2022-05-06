@@ -8,16 +8,47 @@ body {
 
 .backdrop {
   height: 500vh;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
-.backdrop-img {
+.background-img {
   width: 100%;
+  position: absolute;
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+  .background-img {
+    width: 150%;
+    margin-left: -10rem;
+  }
 }
 
 @media (max-width: 800px) {
-  .backdrop-img {
+  .background-img {
     width: 200%;
-    margin-left: -15rem;
+    margin-left: -20rem;
+  }
+
+  .logo-img {
+    max-height: 3.5rem;
+  }
+  
+  .sublogo-img {
+    max-height: 1.5rem;
   }
 }
+
+.logo-container {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: calc(100% - 4rem);
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
