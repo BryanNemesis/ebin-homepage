@@ -4,6 +4,7 @@ import { useState } from 'react'
 import './styles.css'
 import Background from './components/Background'
 import Logo from './components/Logo'
+import ClosingText from './components/ClosingText'
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
       <Background scrollProgress={scrollProgress} />
     </div>
     <Logo scrollProgress={scrollProgress} />
+    <ClosingText scrollProgress={scrollProgress} />
     </>
 
   );
