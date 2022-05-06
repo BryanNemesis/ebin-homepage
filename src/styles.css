@@ -1,0 +1,23 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* background-color: #000; */
+  height: 500vh;
+}
+
+.backdrop {
+  height: 500vh;
+  overflow: hidden;
+}
+
+.backdrop-img {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .backdrop-img {
+    width: 200%;
+    margin-left: -15rem;
+  }
+}
