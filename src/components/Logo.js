@@ -20,9 +20,12 @@ const Logo = ({ scrollProgress }) => {
   const calculateSublogoLook = scrollProgress => {
     const endTransformAtScrollProgress = 0.2
     if (0 <= scrollProgress && scrollProgress < endTransformAtScrollProgress) {
+      let scaleX = 1 - (1 / endTransformAtScrollProgress) * 1.5 * scrollProgress
+      if (scaleX < 0) { scaleX = 0}
       return {
-        transform: `scale(${1 - (1 / endTransformAtScrollProgress) * 2 * scrollProgress}, ${1 - (1 / endTransformAtScrollProgress) * scrollProgress})`,
-        opacity: `${1 - (1 / endTransformAtScrollProgress) * scrollProgress}`
+        transform: `scale(${scaleX}, ${1 - (1 / endTransformAtScrollProgress) * scrollProgress})`,
+        opacity: `${1 - (1 / endTransformAtScrollProgress) * scrollProgress}`,
+        'margin-top': `${-30 * scrollProgress}vh` 
       }
     } else {
       return {

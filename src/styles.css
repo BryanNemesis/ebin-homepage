@@ -8,8 +8,7 @@ body {
 
 .backdrop {
   height: 500vh;
-  display: flex;
-  flex-direction: column;
+  position: relative;
   overflow: hidden;
 }
 

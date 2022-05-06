@@ -26,7 +26,7 @@ const Background = ({ scrollProgress }) => {
     }
   }
   
-  return <img src={city} alt="city" className="backdrop-img" style={calculateBackgroundPosition(scrollProgress)} />
+  return <img src={city} alt="city" className="background-img" style={calculateBackgroundPosition(scrollProgress)} />
 }
 
 export default Background
