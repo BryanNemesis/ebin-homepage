@@ -93,30 +93,49 @@ body {
 .rainbow-container {
   position: fixed;
   top: 0;
-  width: 200%;
-  margin-top: 10vh;
-  margin-left: -10vw;
-  transform-origin: 35%;
-  transform: rotate(-20deg);
+  width: 150%;
+  margin-top: 0vh;
+  margin-left: -25vw;
+  perspective: 50vw;
+}
+
+.rainbow-bars {
+  transform: rotate3d(0, 1, -0.3, 60deg)
 }
 
 .rainbow-bar-1,
 .rainbow-bar-2,
-.rainbow-bar-3 {
-  height: 1rem;
+.rainbow-bar-3,
+.rainbow-bar-4,
+.rainbow-bar-5,
+.rainbow-bar-6 {
+  height: 0.5rem;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.3;
   border-radius: 0.5rem;
 }
 
 .rainbow-bar-1 {
-  background-color: lightcoral;
+  background-color: #39ff55;
+
 }
 
 .rainbow-bar-2 {
-  background-color: orange;
+  background-color: #00e1de;
 }
 
 .rainbow-bar-3 {
-  background-color: gold;
+  background-color: #00b2ff;
+}
+
+.rainbow-bar-4 {
+  background-color: #4866ff;
+}
+
+.rainbow-bar-5 {
+  background-color: #ff3eb8;
+}
+
+.rainbow-bar-6 {
+  background-color: #ff805d;
 }
