@@ -6,6 +6,7 @@ import Background from './components/Background'
 import Logo from './components/Logo'
 import ClosingText from './components/ClosingText'
 import Doge from './components/Doge'
+import Rainbow from './components/Rainbow'
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
       <div className="backdrop" ref={ref}>
         <Background scrollProgress={scrollProgress} />
       </div>
+      <Rainbow scrollProgress={scrollProgress} />
       <Logo scrollProgress={scrollProgress} />
       <Doge scrollProgress={scrollProgress} start={0.2} end={0.5} />
       <Doge scrollProgress={scrollProgress} start={0.3} end={0.6} direction={'left'} />
